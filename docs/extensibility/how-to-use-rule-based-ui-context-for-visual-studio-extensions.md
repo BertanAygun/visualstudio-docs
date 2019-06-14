@@ -134,10 +134,9 @@ Here are the various types of term that are supported:
 |ActiveProjectCapability:\<Expression>|The term is true when active project capabilities match the provided expression. An expression can be something like VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<Expression>|Similar to above but term is true when solution has any loaded project that matches to the expression.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|The term will be true whenever a solution has project that is flavored (aggregated) and has a flavor matching the given project type GUID.|
-|ActiveProjectOutputType:\<outputType>||
-|ActiveProjectBuildProperty:\<buildProperty>||
-|SolutionHasProjectBuildProperty:\<buildProperty>||
-|ProjectAddedItem:\<pattern>||
+|ActiveProjectOutputType:\<outputType>|The term is true when output type for active project matches exactly.|
+|ActiveProjectBuildProperty:\<buildProperty>=<regex>|The term is true when active project has the specified build property and property value matches to regex filter provided. Refer to [Persisting Data in MSBuild Project Files](internals/persisting-data-in-the-msbuild-project-file.md) for more details on build properties.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=<regex>|The term is true when solution has a loaded project with the specified build property and property value matches to regex filter provided.|
 
 ## Compatibility with cross-version extension
 
