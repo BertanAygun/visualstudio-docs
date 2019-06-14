@@ -134,6 +134,10 @@ Here are the various types of term that are supported:
 |ActiveProjectCapability:\<Expression>|The term is true when active project capabilities match the provided expression. An expression can be something like VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<Expression>|Similar to above but term is true when solution has any loaded project that matches to the expression.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|The term will be true whenever a solution has project that is flavored (aggregated) and has a flavor matching the given project type GUID.|
+|ActiveProjectOutputType:\<outputType>||
+|ActiveProjectBuildProperty:\<buildProperty>||
+|SolutionHasProjectBuildProperty:\<buildProperty>||
+|ProjectAddedItem:\<pattern>||
 
 ## Compatibility with cross-version extension
 
